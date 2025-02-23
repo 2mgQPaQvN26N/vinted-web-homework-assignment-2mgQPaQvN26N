@@ -36,7 +36,7 @@ const App = () => {
         return await response.json();
     };
 
-    const updateLikedPhotos = (photos) => {
+    const updateLikedPhotos = (photos: ImageT[]) => {
         return photos.map((item) => {
             item.liked = likedImages.some((id) => {
                 return item.id === id;
@@ -129,11 +129,11 @@ const App = () => {
 
     return (
         <>
-            <Container>
-                {data && data.map((item: ImageT) => {
+            <Container children={
+                data && data.map((item: ImageT) => {
                     return <Card key={item.id} className='container-item' image={item} handleFavourite={handleFavourite}/>;
-                })}
-            </Container>
+                })
+            } />
             <div ref={loaderRef} />
         </>
     );

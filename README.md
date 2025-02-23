@@ -11,6 +11,9 @@ Before running the project, dependencies must be installed by running:
 It can be accessed trough: http://localhost:3030/; 
 When running server, build is not needed.
 
+## Run tests
+```npm run jest```
+
 ## Run build
 ```npm run build```
 

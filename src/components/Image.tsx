@@ -25,6 +25,7 @@ export interface ImageT {
     alt: string;
 }
 const Image = ({...props}:ImageT) => {
+
     return (
         <picture>
             <source
