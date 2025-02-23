@@ -8,7 +8,7 @@ Before running the project, dependencies must be installed by running:
 ## Run project
 ```npm run server```
 
-It can be accessed trough: http://localhost:3030/;
+It can be accessed trough: http://localhost:3030/; 
 When running server, build is not needed.
 
 ## Run build

@@ -1,0 +1,19 @@
+@use './mixins/mixins';
+
+.image {
+    border-radius: 10px;
+    max-width: 100%;
+    vertical-align: middle;
+    height: 300px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    width: 100%;
+
+    @include mixins.media-lg {
+        height: 200px;
+    }
+
+    @include mixins.media-md {
+        height: 150px;
+    }
+}

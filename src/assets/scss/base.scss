@@ -1,0 +1,27 @@
+:root {
+    --font-family: 'Open Sans', arial, sans-serif;
+    --color-main-black: #000;
+    --color-main-white: #fff;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px var(--font-family);
+    line-height: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 16px var(--font-family);
+    line-height: normal;
+    color: var(--color-main-black);
+    background-color: var(--color-main-white);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}

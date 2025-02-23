@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "plugins": [
+    "@stylistic/stylelint-plugin"
+  ],
+  "rules": {
+    "@stylistic/indentation": 4,
+    "selector-class-pattern": null,
+    "scss/selector-no-redundant-nesting-selector": null,
+    "no-descending-specificity": null,
+    "max-nesting-depth": null,
+    "media-query-no-invalid": null
+  }
+}

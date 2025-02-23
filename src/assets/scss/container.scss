@@ -1,0 +1,23 @@
+@use './mixins/mixins';
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    @include mixins.media-lg {
+        gap: 10px;
+        padding: 20px;
+    }
+
+    @include mixins.media-md {
+        padding: 10px;
+    }
+
+    &-item {
+        flex: 1 1 30%;
+    }
+}
